@@ -3,8 +3,8 @@ Description=WebControlCNC
 After=network.target
 
 [Service]
-ExecStart=/usr/local/webcontrolcnc/webcontrol
-WorkingDirectory=/usr/local/webcontrolcnc
+ExecStart=/usr/lib/webcontrolcnc/webcontrol
+WorkingDirectory=/usr/lib/webcontrolcnc
 StandardOutput=inherit
 StandardError=inherit
 Restart=always

@@ -1,0 +1,14 @@
+[Unit]
+Description=WebControlCNC
+After=network.target
+
+[Service]
+ExecStart=/usr/local/webcontrolcnc/webcontrol
+WorkingDirectory=/usr/local/webcontrolcnc
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
